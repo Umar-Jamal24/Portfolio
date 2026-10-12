@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Umar Jamal | Aspiring Website Designer & Frontend Developer</title>
+  <meta name="description" content="Portfolio of Muhammad Umar Jamal, an aspiring website designer and frontend developer from North Karachi, Pakistan.">
+  <!-- Fonts (fall back to system fonts if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- My styles -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg nav-pill" aria-label="Main navigation">
+    <a class="navbar-brand brand" href="#home" aria-label="Muhammad Umar Jamal, home">
+      <span class="brand-mark">MUJ</span><span class="brand-name">Umar Jamal</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-sun btn-sm js-resume" href="assets/resume.pdf" download="Muhammad-Umar-Jamal-Resume.pdf">Download resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <p class="status-chip"><span class="dot"></span>Ready for my first opportunity</p>
+        <h1 class="hero-name">Muhammad Umar Jamal</h1>
+        <p class="hero-role">Aspiring Website Designer &amp; Frontend Developer</p>
+        <p class="hero-intro">I design and build clean, responsive websites with HTML, CSS and Bootstrap, and I'm learning JavaScript to make them interactive. I'm based in North Karachi and I learn by building real projects.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#projects" class="btn btn-cobalt btn-lg">Explore my work</a>
+          <a href="#contact" class="btn btn-outline-ink btn-lg">Contact me</a>
+          <a href="assets/resume.pdf" download="Muhammad-Umar-Jamal-Resume.pdf" class="btn btn-sun btn-lg js-resume">Download resume</a>
+        </div>
+        <p class="resume-note" id="resumeNote" role="status" hidden></p>
+      </div>
+
+      <!-- Abstract "browser window" visual + profile photo slot -->
+      <div class="col-lg-5">
+        <div class="mock" aria-hidden="true">
+          <div class="mock-bar"><i></i><i></i><i></i><span>portfolio / index.html</span></div>
+          <div class="mock-body">
+            <!-- To use your photo: save it as assets/images/profile.jpg. Initials show until then. -->
+            <div class="avatar"><span>MUJ</span><img src="assets/images/profile.jpg" alt="" onerror="this.remove()"></div>
+            <div class="wire w1"></div><div class="wire w2"></div><div class="wire w3"></div>
+            <div class="wire-btn"></div>
+            <div class="wire-row"><b></b><b></b><b></b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About me</h2>
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-7 reveal">
+        <p class="lead-statement">I'm a website designer from North Karachi who enjoys turning ideas into pages people can actually use.</p>
+        <p>I'm developing my frontend skills with HTML, CSS, Bootstrap and basic JavaScript. I'm also studying O Level privately with a focus on science subjects, and I use that same curiosity to learn how websites are planned, built and improved.</p>
+        <p>My best way of learning is making things. Each project teaches me something new about layout, readability and structure, and I'm looking for opportunities to keep growing.</p>
+      </div>
+      <div class="col-lg-5 reveal">
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>North Karachi, Karachi, Pakistan</dd></div>
+          <div><dt>Focus</dt><dd>Website design and frontend development</dd></div>
+          <div><dt>Studying</dt><dd>O Level (private candidate), science subjects</dd></div>
+          <div><dt>Learning</dt><dd>JavaScript fundamentals</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-ink">
+  <div class="container">
+    <h2 class="section-title">Skills and technologies</h2>
+    <p class="section-sub">The tools I use to design and build websites. No ratings, just an honest description of each.</p>
+    <div class="row g-3 g-lg-4" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">A hands-on project where I practised design and frontend development. More will be added as I build them.</p>
+    <div id="projectsList"></div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section section-mist">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <article class="edu-card reveal">
+      <div>
+        <h3>O Level</h3>
+        <p class="mb-1">Private candidate</p>
+        <p class="mb-0">Subjects: Science subjects</p>
+      </div>
+      <span class="pill-status">Currently studying</span>
+    </article>
+  </div>
+</section>
+
+<!-- ============ JOURNEY (instead of work experience) ============ -->
+<section id="journey" class="section">
+  <div class="container">
+    <h2 class="section-title">My journey</h2>
+    <p class="section-sub">I don't have professional work experience yet. Here is how I'm building my skills.</p>
+    <ol class="journey">
+      <li class="reveal"><h3>Learning the foundations</h3><p>Getting comfortable with HTML and CSS to structure and style web pages.</p></li>
+      <li class="reveal"><h3>Building faster with Bootstrap</h3><p>Using Bootstrap's grid and components to create responsive layouts.</p></li>
+      <li class="reveal"><h3>Starting with JavaScript</h3><p>Learning the basics and adding simple interactions to my projects. Still in progress.</p></li>
+      <li class="reveal"><h3>Publishing Alberto Clocks</h3><p>Completing a full website project and putting it online with GitHub.</p></li>
+      <li class="reveal now"><h3>Ready for my first opportunity</h3><p>Looking for a chance to apply these skills on real work and keep learning from others.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section-ink">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">The quickest way to reach me is by phone.</p>
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-5">
+        <ul class="contact-list">
+          <li><span>Name</span>Muhammad Umar Jamal</li>
+          <li><span>Location</span>North Karachi, Karachi, Pakistan</li>
+          <li><span>Phone</span><a href="tel:+923313266084">03313266084</a></li>
+        </ul>
+        <!-- Filled from CONFIG.links in js/script.js. Only links with a URL appear. -->
+        <ul class="link-list" id="contactLinks"></ul>
+      </div>
+      <div class="col-lg-7">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" autocomplete="name" required aria-describedby="nameErr">
+              <div class="err" id="nameErr"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email" required aria-describedby="emailErr">
+              <div class="err" id="emailErr"></div>
+            </div>
+            <div class="col-12">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" required aria-describedby="subjectErr">
+              <div class="err" id="subjectErr"></div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required aria-describedby="messageErr"></textarea>
+              <div class="err" id="messageErr"></div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-sun btn-lg">Send message</button>
+            </div>
+            <div class="col-12"><p id="formStatus" class="form-status" role="status" aria-live="polite" hidden></p></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-5">
+        <p class="foot-name">Muhammad Umar Jamal</p>
+        <p class="mb-1">Website Designer</p>
+        <p class="mb-0">North Karachi, Karachi, Pakistan</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <p class="foot-head">Quick links</p>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4">
+        <p class="foot-head">Get in touch</p>
+        <ul class="list-unstyled mb-0" id="footerLinks">
+          <li><a href="tel:+923313266084">03313266084</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year">2026</span> Muhammad Umar Jamal. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
